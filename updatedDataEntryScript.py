@@ -15,17 +15,17 @@ browser.get("https://ecommerce-playground.lambdatest.io/index.php?route=account/
 
 browser.implicitly_wait(0.5)
 
-first_name = browser.find_element(By.ID, "input-firstnameUmair")
-last_name = browser.find_element(By.ID, "input-lastnameMalik")
-telephone = browser.find_element(By.ID, "input-telephone0333-5631160")
+first_name = browser.find_element(By.ID, "input-firstname")
+last_name = browser.find_element(By.ID, "input-lastname")
+telephone = browser.find_element(By.ID, "input-telephone")
 email = browser.find_element(By.ID, "input-email")
 password = browser.find_element(By.ID, "input-password")
 password_confirm = browser.find_element(By.ID, "input-confirm")
 terms = browser.find_element(By.XPATH, value="//label[@for='input-agree']")
 continue_button = browser.find_element(By.XPATH, value="//input[@value='Continue']")
 
-first_name.send_keys("FFirstName")
-last_name.send_keys("LLastName")
+first_name.send_keys("FFirstNameUmair")
+last_name.send_keys("LLastNameMalik")
 email.send_keys("sample-email1@data.com")
 telephone.send_keys("+351999888888")
 password.send_keys("12345678")
