@@ -1,7 +1,7 @@
 pipeline{
   agent any
 stages{
-  stage('test){
+  stage('test'){
 steps{
     sh 'python3 seleniumTest.py'  
 }
